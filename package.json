@@ -1,20 +1,40 @@
 {
-  "name": "actions-test",
-  "version": "0.0.7",
-  "description": "Repository to test github actions",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lundsholm/actions-test.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lundsholm/actions-test/issues"
-  },
-  "homepage": "https://github.com/lundsholm/actions-test#readme"
+	"name": "actions-test",
+	"version": "0.0.7",
+	"description": "Repository to test github actions",
+	"type": "module",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"prepare": "svelte-kit sync",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"prettier": "^2.5.1",
+		"prettier-plugin-svelte": "^2.5.0",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.2.6",
+		"svelte-preprocess": "^4.10.1",
+		"svelte2tsx": "^0.5.10",
+		"tslib": "^2.3.1",
+		"typescript": "~4.6.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lundsholm/actions-test.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/lundsholm/actions-test/issues"
+	},
+	"homepage": "https://github.com/lundsholm/actions-test#readme"
 }

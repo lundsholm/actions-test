@@ -10,6 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npx conventional-github-releaser -p angular
+      - name: Create release
+        run: npx conventional-github-releaser -p angular
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.TOKEN}}
+      - name: Publish to npm
+        run: |
+          npm run install
+          npm run package
+          cd ./package
+          ls -l
