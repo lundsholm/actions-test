@@ -1,0 +1,20 @@
+{
+  "name": "actions-test",
+  "version": "0.0.2",
+  "description": "Repository to test github actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lundsholm/actions-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lundsholm/actions-test/issues"
+  },
+  "homepage": "https://github.com/lundsholm/actions-test#readme"
+}
