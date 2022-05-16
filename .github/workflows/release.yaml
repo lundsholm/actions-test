@@ -16,7 +16,7 @@ jobs:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.TOKEN}}
       - name: Publish to npm
         run: |
-          npm run install
+          npm install
           npm run package
           cd ./package
           ls -l
